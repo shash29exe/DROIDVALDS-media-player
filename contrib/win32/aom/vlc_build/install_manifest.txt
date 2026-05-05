@@ -1,0 +1,16 @@
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/AOM/AOMConfig.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/AOM/AOMConfigVersion.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/AOM/AOMTargets.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/AOM/AOMTargets-relwithdebinfo.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_codec.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_frame_buffer.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_image.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_integer.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_decoder.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aomdx.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aomcx.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_encoder.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/aom/aom_external_partition.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/pkgconfig/aom.pc
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/libaom.a

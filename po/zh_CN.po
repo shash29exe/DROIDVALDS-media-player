@@ -565,49 +565,50 @@ msgid ""
 "charset=utf-8\" /></head><body><h2>Welcome to VLC media player Help</"
 "h2><h3>Documentation</h3><p>You can find VLC documentation on VideoLAN's <a "
 "href=\"http://wiki.videolan.org\">wiki</a> website.</p><p>If you are a "
-"newcomer to VLC media player, please read the<br><a href=\"http://wiki."
-"videolan.org/Documentation:VLC_for_dummies\"><em>Introduction to VLC media "
-"player</em></a>.</p><p>You will find some information on how to use the "
-"player in the <br>\"<a href=\"http://wiki.videolan.org/Documentation:"
-"Play_HowTo\"><em>How to play files with VLC media player</em></a>\" document."
-"</p><p>For all the saving, converting, transcoding, encoding, muxing and "
-"streaming tasks, you should find useful information in the <a href=\"http://"
-"wiki.videolan.org/Documentation:Streaming_HowTo\">Streaming Documentation</"
-"a>.</p><p>If you are unsure about terminology, please consult the <a href="
-"\"http://wiki.videolan.org/Knowledge_Base\">knowledge base</a>.</p><p>To "
-"understand the main keyboard shortcuts, read the <a href=\"http://wiki."
-"videolan.org/Hotkeys\">shortcuts</a> page.</p><h3>Help</h3><p>Before asking "
-"any question, please refer yourself to the <a href=\"http://www.videolan.org/"
-"support/faq.html\">FAQ</a>.</p><p>You might then get (and give) help on the "
-"<a href=\"http://forum.videolan.org\">Forums</a>, the <a href=\"http://www."
-"videolan.org/vlc/lists.html\">mailing-lists</a> or our IRC channel "
-"(<em>#videolan</em> on irc.freenode.net).</p><h3>Contribute to the project</"
-"h3><p>You can help the VideoLAN project giving some of your time to help the "
-"community, to design skins, to translate the documentation, to test and to "
-"code. You can also give funds and material to help us. And of course, you "
-"can <b>promote</b> VLC media player.</p></body></html>"
+"newcomer to VLC media player, please read the<br><a href=\"http://"
+"wiki.videolan.org/Documentation:VLC_for_dummies\"><em>Introduction to VLC "
+"media player</em></a>.</p><p>You will find some information on how to use "
+"the player in the <br>\"<a href=\"http://wiki.videolan.org/"
+"Documentation:Play_HowTo\"><em>How to play files with VLC media player</em></"
+"a>\" document.</p><p>For all the saving, converting, transcoding, encoding, "
+"muxing and streaming tasks, you should find useful information in the <a "
+"href=\"http://wiki.videolan.org/Documentation:Streaming_HowTo\">Streaming "
+"Documentation</a>.</p><p>If you are unsure about terminology, please consult "
+"the <a href=\"http://wiki.videolan.org/Knowledge_Base\">knowledge base</a>.</"
+"p><p>To understand the main keyboard shortcuts, read the <a href=\"http://"
+"wiki.videolan.org/Hotkeys\">shortcuts</a> page.</p><h3>Help</h3><p>Before "
+"asking any question, please refer yourself to the <a href=\"http://"
+"www.videolan.org/support/faq.html\">FAQ</a>.</p><p>You might then get (and "
+"give) help on the <a href=\"http://forum.videolan.org\">Forums</a>, the <a "
+"href=\"http://www.videolan.org/vlc/lists.html\">mailing-lists</a> or our IRC "
+"channel (<em>#videolan</em> on irc.freenode.net).</p><h3>Contribute to the "
+"project</h3><p>You can help the VideoLAN project giving some of your time to "
+"help the community, to design skins, to translate the documentation, to test "
+"and to code. You can also give funds and material to help us. And of course, "
+"you can <b>promote</b> VLC media player.</p></body></html>"
 msgstr ""
 "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; "
 "charset=utf-8\" /></head><body><h2>欢迎使用 VLC media player 帮助</h2><h3>文"
 "档</h3><p>您可以在 VideoLAN 的 <a href=\"http://wiki.videolan.org\">wiki</a> "
 "网站上找到 VLC 的文档。</p><p>如果您是 VLC media player 的新手，请阅读<a "
 "href=\"http://wiki.videolan.org/Documentation:VLC_for_dummies\"><em>VLC "
-"media player 介绍</em></a>。</p><p>您可以在《<a href=\"http://wiki.videolan."
-"org/Documentation:Play_HowTo\"><em>如何使用 VLC media player 播放文件</em></"
-"a>》找到一些如何使用播放器的信息。</p><p>如果您要完成保存、转换、转码、编码、"
-"混流或串流任务，可以在 <a href=\"http://wiki.videolan.org/Documentation:"
-"Streaming_HowTo\">串流处理文档</a> 中找到有用的信息。</p><p>如果您不是十分明"
-"白术语，请查阅 <a href=\"http://wiki.videolan.org/Knowledge_Base\">知识库</"
-"a>。</p><p>要了解主要的快捷键，请阅读 <a href=\"http://wiki.videolan.org/"
-"Hotkeys\">快捷键</a> 页。</p><h3>帮助</h3><p>在提出任何问题之前，请您先自行参"
-"考 <a href=\"http://www.videolan.org/support/faq.html\">FAQ</a>。</p><p>在这"
-"以后您可以在 <a href=\"http://forum.videolan.org\">论坛</a>、<a href="
-"\"http://www.videolan.org/vlc/lists.html\">邮件列表</a>或我们的 IRC 频道 "
-"(irc.freenode.net 上的 <a href=\"http://www.videolan.org/webirc/"
-"\"><em>#videolan</em></a>) 中获取 (或给予) 帮助。</p><h3>为此项目做贡献</"
-"h3><p>您可以奉献出您的一些时间，通过帮助社区、设计外观、翻译文档、测试、编写"
-"代码等方式帮助 VideoLAN 项目。您也可以为我们提供资金或材料。当然，您也可以 "
-"<b>推广</b> VLC media player。</p></body></html>"
+"media player 介绍</em></a>。</p><p>您可以在《<a href=\"http://"
+"wiki.videolan.org/Documentation:Play_HowTo\"><em>如何使用 VLC media player 播"
+"放文件</em></a>》找到一些如何使用播放器的信息。</p><p>如果您要完成保存、转"
+"换、转码、编码、混流或串流任务，可以在 <a href=\"http://wiki.videolan.org/"
+"Documentation:Streaming_HowTo\">串流处理文档</a> 中找到有用的信息。</p><p>如"
+"果您不是十分明白术语，请查阅 <a href=\"http://wiki.videolan.org/"
+"Knowledge_Base\">知识库</a>。</p><p>要了解主要的快捷键，请阅读 <a "
+"href=\"http://wiki.videolan.org/Hotkeys\">快捷键</a> 页。</p><h3>帮助</h3><p>"
+"在提出任何问题之前，请您先自行参考 <a href=\"http://www.videolan.org/support/"
+"faq.html\">FAQ</a>。</p><p>在这以后您可以在 <a href=\"http://"
+"forum.videolan.org\">论坛</a>、<a href=\"http://www.videolan.org/vlc/"
+"lists.html\">邮件列表</a>或我们的 IRC 频道 (irc.freenode.net 上的 <a "
+"href=\"http://www.videolan.org/webirc/\"><em>#videolan</em></a>) 中获取 (或给"
+"予) 帮助。</p><h3>为此项目做贡献</h3><p>您可以奉献出您的一些时间，通过帮助社"
+"区、设计外观、翻译文档、测试、编写代码等方式帮助 VideoLAN 项目。您也可以为我"
+"们提供资金或材料。当然，您也可以 <b>推广</b> VLC media player。</p></body></"
+"html>"
 
 #: src/audio_output/filters.c:267
 msgid "Audio filtering failed"
@@ -1539,8 +1540,8 @@ msgstr "扩展界面模块"
 msgid ""
 "You can select \"additional interfaces\" for VLC. They will be launched in "
 "the background in addition to the default interface. Use a colon separated "
-"list of interface modules. (common values are \"rc\" (remote control), \"http"
-"\", \"gestures\" ...)"
+"list of interface modules. (common values are \"rc\" (remote control), "
+"\"http\", \"gestures\" ...)"
 msgstr ""
 "您可以为 VLC 选择“附加界面”。它们将在启动默认界面时在后台启动。界面模块的列表"
 "使用冒号分隔。(常用值有“rc”(远程控制)“http”“gestures”...)"
@@ -2277,8 +2278,8 @@ msgstr "源宽高比"
 msgid ""
 "This forces the source aspect ratio. For instance, some DVDs claim to be "
 "16:9 while they are actually 4:3. This can also be used as a hint for VLC "
-"when a movie does not have aspect ratio information. Accepted formats are x:"
-"y (4:3, 16:9, etc.) expressing the global image aspect, or a float value "
+"when a movie does not have aspect ratio information. Accepted formats are "
+"x:y (4:3, 16:9, etc.) expressing the global image aspect, or a float value "
 "(1.25, 1.3333, etc.) expressing pixel squareness."
 msgstr ""
 "这将强制指定源宽高比。例如某些 DVD 自称为 16:9，但实际上是 4:3 的。这也可以在"
@@ -2805,10 +2806,10 @@ msgstr "根据当前媒体更改标题"
 
 #: src/libvlc-module.c:694
 msgid ""
-"This option allows you to set the title according to what's being played<br>"
-"$a: Artist<br>$b: Album<br>$c: Copyright<br>$t: Title<br>$g: Genre<br>$n: "
-"Track num<br>$p: Now playing<br>$A: Date<br>$D: Duration<br>$Z: \"Now playing"
-"\" (Fall back on Title - Artist)"
+"This option allows you to set the title according to what's being "
+"played<br>$a: Artist<br>$b: Album<br>$c: Copyright<br>$t: Title<br>$g: "
+"Genre<br>$n: Track num<br>$p: Now playing<br>$A: Date<br>$D: Duration<br>$Z: "
+"\"Now playing\" (Fall back on Title - Artist)"
 msgstr ""
 "本选项允许您根据正在播放的内容设置标题<br>$a: 艺术家<br>$b: 专辑<br>$c: 版权"
 "<br>$t: 标题<br>$g: 流派<br>$n: 轨道号<br>$p: 正在播放<br>$A: 日期<br>$D: 时"
@@ -6467,9 +6468,8 @@ msgid ""
 "\"Device config\" area, and use those numbers here. -1 means that settings "
 "will not be changed."
 msgstr ""
-"选择视频输入源，例如混合、s-视频 或调谐器。由于这些设置是取决于硬件，您应该"
-"在“设备配置”区域查找较佳的设置，并在这里使用对应数值。-1 表示设置将不会被更"
-"改。"
+"选择视频输入源，例如混合、s-视频 或调谐器。由于这些设置是取决于硬件，您应该在"
+"“设备配置”区域查找较佳的设置，并在这里使用对应数值。-1 表示设置将不会被更改。"
 
 #: modules/access/dshow/dshow.cpp:182
 msgid "Audio input pin"
@@ -7275,8 +7275,9 @@ msgstr "HTTP 代理"
 
 #: modules/access/http.c:61
 msgid ""
-"HTTP proxy to be used It must be of the form http://[user@]myproxy.mydomain:"
-"myport/ ; if empty, the http_proxy environment variable will be tried."
+"HTTP proxy to be used It must be of the form http://"
+"[user@]myproxy.mydomain:myport/ ; if empty, the http_proxy environment "
+"variable will be tried."
 msgstr ""
 "要使用的 HTTP 代理必须是以下形式 http://[用户名@]我的代理.我的域名:我的端口/ "
 "的形式;如果为空将会尝试 http_proxy 环境变量。"
@@ -7848,8 +7849,8 @@ msgstr "未找到音频输入设备"
 
 #: modules/access/qtsound.m:263 modules/access/qtsound.m:294
 msgid ""
-"Your Mac does not seem to be equipped with a suitable audio input device."
-"Please check your connectors and drivers."
+"Your Mac does not seem to be equipped with a suitable audio input "
+"device.Please check your connectors and drivers."
 msgstr "您的 Mac 似乎未配备合适的音频输入设备。请检查您的接线及驱动程序。"
 
 #: modules/access/qtsound.m:293
@@ -8271,8 +8272,8 @@ msgstr "RTSP 身份验证"
 #, c-format
 msgid ""
 "The computer (%s) you are trying to connect to requires authentication.\n"
-"Please provide a username (ideally a domain name using the format DOMAIN;"
-"username) and a password."
+"Please provide a username (ideally a domain name using the format "
+"DOMAIN;username) and a password."
 msgstr ""
 
 #: modules/access/srt.c:288 modules/access_output/srt.c:311
@@ -8727,13 +8728,13 @@ msgstr "v4l2 驱动控制"
 #, fuzzy
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
-"list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
-"audio_crc=0,stream_type=3} ). To list available controls, increase verbosity "
-"(-vv) or use the v4l2-ctl application."
+"list optionally encapsulated by curly braces (e.g.: "
+"{video_bitrate=6000000,audio_crc=0,stream_type=3} ). To list available "
+"controls, increase verbosity (-vv) or use the v4l2-ctl application."
 msgstr ""
-"设置 v4l2 驱动控制的值  (例如: {video_bitrate=6000000,audio_crc=0,"
-"stream_type=3} )，用逗号分隔，可以放在大括号内。要列出可用的控制项目，请增强"
-"提示程度 (-vvv) 或使用 v4l2-ctl 应用程序。"
+"设置 v4l2 驱动控制的值  (例如: "
+"{video_bitrate=6000000,audio_crc=0,stream_type=3} )，用逗号分隔，可以放在大括"
+"号内。要列出可用的控制项目，请增强提示程度 (-vvv) 或使用 v4l2-ctl 应用程序。"
 
 #: modules/access/v4l2/v4l2.c:242 modules/codec/avcodec/avcodec.c:50
 #: modules/codec/avcodec/avcodec.c:54 modules/codec/x264.c:435
@@ -9117,9 +9118,9 @@ msgstr "vlc 读取密钥 uri 及密钥位置的文件"
 #: modules/access_output/livehttp.c:98
 #, fuzzy
 msgid ""
-"File is read when segment starts and is assumed to be in format: key-uri"
-"\\nkey-file. File is read on the segment opening and values are used on that "
-"segment."
+"File is read when segment starts and is assumed to be in format: key-"
+"uri\\nkey-file. File is read on the segment opening and values are used on "
+"that segment."
 msgstr ""
 "剪辑开始播放时会读取文件，文件格式应为:密钥 url\\n密钥文件。文件在剪辑打开时"
 "读取，其值针对该剪辑使用。"
@@ -10572,7 +10573,6 @@ msgstr "正在解码"
 
 #: modules/codec/avcodec/avcodec.c:147 modules/codec/jpeg.c:119
 #: modules/codec/omxil/omxil.c:171 modules/codec/png.c:99
-#: modules/codec/schroedinger.c:370
 msgid "Encoding"
 msgstr "正在编码"
 
@@ -11088,11 +11088,11 @@ msgstr "Theora 视频封包器"
 msgid "Daala video encoder"
 msgstr "Theora 视频编码器"
 
-#: modules/codec/daala.c:143 modules/codec/schroedinger.c:54
+#: modules/codec/daala.c:143
 msgid "Chroma format"
 msgstr "色度格式"
 
-#: modules/codec/daala.c:144 modules/codec/schroedinger.c:55
+#: modules/codec/daala.c:144
 msgid ""
 "Picking chroma format will force a conversion of the video into that format"
 msgstr "选择色度格式将强行将视频转换为所选格式"
@@ -11155,8 +11155,8 @@ msgstr "子画面位置"
 #: modules/codec/dvbsub.c:91
 msgid ""
 "You can enforce the subpicture position on the video (0=center, 1=left, "
-"2=right, 4=top, 8=bottom, you can also use combinations of these values, e."
-"g. 6=top-right)."
+"2=right, 4=top, 8=bottom, you can also use combinations of these values, "
+"e.g. 6=top-right)."
 msgstr ""
 "您可以强制指定子画面在视频上的位置 (0=居中、1=左、2=右、4=上、8=下，您也可以"
 "组合使用这些值，例如 6=右上)。"
@@ -11893,10 +11893,10 @@ msgstr "速率控制精度"
 
 #: modules/codec/qsv.c:128
 msgid ""
-"Tolerance in percentage of the 'avbr'  (Average Variable BitRate) method. (e."
-"g. 10 with a bitrate of 800  kpbs means the encoder tries not to  go above "
-"880 kpbs and under  730 kpbs. The targeted accuracy is only reached after a "
-"certained  convergence period. See the convergence parameter"
+"Tolerance in percentage of the 'avbr'  (Average Variable BitRate) method. "
+"(e.g. 10 with a bitrate of 800  kpbs means the encoder tries not to  go "
+"above 880 kpbs and under  730 kpbs. The targeted accuracy is only reached "
+"after a certained  convergence period. See the convergence parameter"
 msgstr ""
 "'avbr'  (平均可变比特率) 方法所容忍的百分比。(如对 800  kbps 的比特率设为 "
 "10，则编码器将尝试既不超过 880 kbps  又不低于 730 kbps。目标精度需要一定的收"
@@ -11961,377 +11961,6 @@ msgstr "伪 raw 视频封包器"
 #, fuzzy
 msgid "Raw video encoder for RTP"
 msgstr "Theora 视频编码器"
-
-#: modules/codec/schroedinger.c:60
-msgid "4:2:0"
-msgstr "4:2:0"
-
-#: modules/codec/schroedinger.c:60
-msgid "4:2:2"
-msgstr "4:2:2"
-
-#: modules/codec/schroedinger.c:60
-msgid "4:4:4"
-msgstr "4:4:4"
-
-#: modules/codec/schroedinger.c:63
-msgid "Rate control method"
-msgstr "速率控制方法"
-
-#: modules/codec/schroedinger.c:64
-msgid "Method used to encode the video sequence"
-msgstr "用于编码视频序列的方式"
-
-#: modules/codec/schroedinger.c:77
-msgid "Constant noise threshold mode"
-msgstr "恒定噪点阈值模式"
-
-#: modules/codec/schroedinger.c:78
-msgid "Constant bitrate mode (CBR)"
-msgstr "恒定码率模式 (CBR)"
-
-#: modules/codec/schroedinger.c:79
-msgid "Low Delay mode"
-msgstr "低延迟模式"
-
-#: modules/codec/schroedinger.c:80
-msgid "Lossless mode"
-msgstr "无损模式"
-
-#: modules/codec/schroedinger.c:81
-msgid "Constant lambda mode"
-msgstr "持续 lambda 模式"
-
-#: modules/codec/schroedinger.c:82
-msgid "Constant error mode"
-msgstr "恒定错误模式"
-
-#: modules/codec/schroedinger.c:83
-msgid "Constant quality mode"
-msgstr "恒定质量模式"
-
-#: modules/codec/schroedinger.c:87
-msgid "GOP structure"
-msgstr "GOP 结构"
-
-#: modules/codec/schroedinger.c:88
-msgid "GOP structure used to encode the video sequence"
-msgstr "用于编码视频序列的 GOP 结构"
-
-#: modules/codec/schroedinger.c:100
-msgid ""
-"No fixed gop structure. A picture can be intra or inter and refer to "
-"previous or future pictures."
-msgstr "无固定 gop 结构。画面可以帧内或帧间，可引用先前或后面的画面。"
-
-#: modules/codec/schroedinger.c:101
-msgid "I-frame only sequence"
-msgstr "仅 I-帧的序列"
-
-#: modules/codec/schroedinger.c:102 modules/codec/schroedinger.c:103
-msgid "Inter pictures refere to previous pictures only"
-msgstr "仅帧间引用先前画面"
-
-#: modules/codec/schroedinger.c:104 modules/codec/schroedinger.c:105
-msgid "Inter pictures can refer to previous or future pictures"
-msgstr "帧间引用先前或后面的画面"
-
-#: modules/codec/schroedinger.c:109
-msgid "Constant quality factor"
-msgstr "恒定质量系数"
-
-#: modules/codec/schroedinger.c:110
-msgid "Quality factor to use in constant quality mode"
-msgstr "用于恒定质量模式的质量系数"
-
-#: modules/codec/schroedinger.c:113
-msgid "Noise Threshold"
-msgstr "噪点阈值"
-
-#: modules/codec/schroedinger.c:114
-msgid "Noise threshold to use in constant noise threshold mode"
-msgstr "用于恒定噪点阈值模式的噪点阈值"
-
-#: modules/codec/schroedinger.c:117
-msgid "CBR bitrate (kbps)"
-msgstr "CBR 位率 (kbps)"
-
-#: modules/codec/schroedinger.c:118
-msgid "Target bitrate in kbps when encoding in constant bitrate mode"
-msgstr "以恒定码率模式编码时的目标码率，单位为 kbps"
-
-#: modules/codec/schroedinger.c:121
-msgid "Maximum bitrate (kbps)"
-msgstr "最高码率 (kbps)"
-
-#: modules/codec/schroedinger.c:122
-msgid "Maximum bitrate in kbps when encoding in constant bitrate mode"
-msgstr "以恒定码率模式编码时的最高码率，单位为 kbps"
-
-#: modules/codec/schroedinger.c:125
-msgid "Minimum bitrate (kbps)"
-msgstr "最低码率 (kbps)"
-
-#: modules/codec/schroedinger.c:126
-msgid "Minimum bitrate in kbps when encoding in constant bitrate mode"
-msgstr "以恒定码率模式编码时的最低码率，单位为 kbps"
-
-#: modules/codec/schroedinger.c:129
-msgid "GOP length"
-msgstr "GOP 长度"
-
-#: modules/codec/schroedinger.c:130
-msgid ""
-"Number of pictures between successive sequence headers i.e. length of the "
-"group of pictures"
-msgstr "连续序列头之间的画面数，即画面组长度"
-
-#: modules/codec/schroedinger.c:134
-msgid "Prefilter"
-msgstr "预过滤器"
-
-#: modules/codec/schroedinger.c:135
-msgid "Enable adaptive prefiltering"
-msgstr "启用自适应预过滤"
-
-#: modules/codec/schroedinger.c:147
-msgid "No pre-filtering"
-msgstr "无预过滤"
-
-#: modules/codec/schroedinger.c:148
-msgid "Centre Weighted Median"
-msgstr "中央重心"
-
-#: modules/codec/schroedinger.c:149
-msgid "Gaussian Low Pass Filter"
-msgstr "高斯低通滤镜"
-
-#: modules/codec/schroedinger.c:150
-msgid "Add Noise"
-msgstr "增噪"
-
-#: modules/codec/schroedinger.c:151
-msgid "Gaussian Adaptive Low Pass Filter"
-msgstr "高斯自适应低通滤镜"
-
-#: modules/codec/schroedinger.c:152
-msgid "Low Pass Filter"
-msgstr "低通滤镜"
-
-#: modules/codec/schroedinger.c:156
-msgid "Amount of prefiltering"
-msgstr "预过滤总量"
-
-#: modules/codec/schroedinger.c:157
-msgid "Higher value implies more prefiltering"
-msgstr "较高数值意味着更多的预过滤"
-
-#: modules/codec/schroedinger.c:160
-msgid "Picture coding mode"
-msgstr "画面编码模式"
-
-#: modules/codec/schroedinger.c:161
-msgid ""
-"Field coding is where interlaced fields are coded separately as opposed to a "
-"pseudo-progressive frame"
-msgstr "分场编码将隔行扫描的场分开编码，而不是伪逐行扫描帧"
-
-#: modules/codec/schroedinger.c:166
-msgid "auto - let encoder decide based upon input (Best)"
-msgstr "自动 - 让编码器根据输入数据决定 (最佳)"
-
-#: modules/codec/schroedinger.c:167
-msgid "force coding frame as single picture"
-msgstr "强制将帧编码为单一画面"
-
-#: modules/codec/schroedinger.c:168
-msgid "force coding frame as separate interlaced fields"
-msgstr "强制将帧编码为两个隔行扫描场"
-
-#: modules/codec/schroedinger.c:173
-msgid "Size of motion compensation blocks"
-msgstr "运动补偿块尺寸"
-
-#: modules/codec/schroedinger.c:182 modules/codec/schroedinger.c:199
-#: modules/codec/schroedinger.c:297 modules/codec/schroedinger.c:338
-msgid "automatic - let encoder decide based upon input (Best)"
-msgstr "自动 - 让编码器根据输入数据决定 (最佳)"
-
-#: modules/codec/schroedinger.c:183
-msgid "small - use small motion compensation blocks"
-msgstr "小 - 使用小运动补偿块"
-
-#: modules/codec/schroedinger.c:184
-msgid "medium - use medium motion compensation blocks"
-msgstr "中 - 使用中运动补偿块"
-
-#: modules/codec/schroedinger.c:185
-msgid "large - use large motion compensation blocks"
-msgstr "大 - 使用大运动补偿块"
-
-#: modules/codec/schroedinger.c:190
-msgid "Overlap of motion compensation blocks"
-msgstr "运动补偿块重叠"
-
-#: modules/codec/schroedinger.c:200
-msgid "none - Motion compensation blocks do not overlap"
-msgstr "无 - 运动补偿块不重叠"
-
-#: modules/codec/schroedinger.c:201
-msgid "partial - Motion compensation blocks only partially overlap"
-msgstr "部分 - 运动补偿块仅部分重叠"
-
-#: modules/codec/schroedinger.c:202
-msgid "full - Motion compensation blocks fully overlap"
-msgstr "全 - 运动补偿块完全重叠"
-
-#: modules/codec/schroedinger.c:207
-msgid "Motion Vector precision"
-msgstr "运动向量精度"
-
-#: modules/codec/schroedinger.c:208
-msgid "Motion Vector precision in pels"
-msgstr "运动向量的精度，单位为像素"
-
-#: modules/codec/schroedinger.c:214
-msgid "Three component motion estimation"
-msgstr "三原色动作估计"
-
-#: modules/codec/schroedinger.c:215
-msgid "Use chroma as part of the motion estimation process"
-msgstr "将色度用作运动估算过程的一部分"
-
-#: modules/codec/schroedinger.c:218
-msgid "Intra picture DWT filter"
-msgstr "画面内 DWT 滤镜"
-
-#: modules/codec/schroedinger.c:221
-msgid "Inter picture DWT filter"
-msgstr "画面间 DWT 滤镜"
-
-#: modules/codec/schroedinger.c:244
-msgid "Number of DWT iterations"
-msgstr "DWT 迭代数目"
-
-#: modules/codec/schroedinger.c:245
-msgid "Also known as DWT levels"
-msgstr "又称 DWT 级别"
-
-#: modules/codec/schroedinger.c:250
-msgid "Enable multiple quantizers"
-msgstr "启用多个量化器"
-
-#: modules/codec/schroedinger.c:251
-msgid "Enable multiple quantizers per subband (one per codeblock)"
-msgstr "为每个子带启用多个量化器 (每个编码块一个)"
-
-#: modules/codec/schroedinger.c:255
-msgid "Disable arithmetic coding"
-msgstr "禁用算术编码"
-
-#: modules/codec/schroedinger.c:256
-msgid "Use variable length codes instead, useful for very high bitrates"
-msgstr "改用可变长编码，码率非常高时很有用"
-
-#: modules/codec/schroedinger.c:261
-msgid "perceptual weighting method"
-msgstr "感知加权法"
-
-#: modules/codec/schroedinger.c:272
-msgid "perceptual distance"
-msgstr "感知距离"
-
-#: modules/codec/schroedinger.c:273
-msgid "perceptual distance to calculate perceptual weight"
-msgstr "计算感知权重的感知距离"
-
-#: modules/codec/schroedinger.c:277
-msgid "Horizontal slices per frame"
-msgstr "每帧水平切片数"
-
-#: modules/codec/schroedinger.c:278
-msgid "Number of horizontal slices per frame in low delay mode"
-msgstr "低延迟模式下每帧水平切片数"
-
-#: modules/codec/schroedinger.c:282
-msgid "Vertical slices per frame"
-msgstr "每帧垂直切片数"
-
-#: modules/codec/schroedinger.c:283
-msgid "Number of vertical slices per frame in low delay mode"
-msgstr "低延迟模式下每帧垂直切片数"
-
-#: modules/codec/schroedinger.c:287
-msgid "Size of code blocks in each subband"
-msgstr "各子带编码块大小"
-
-#: modules/codec/schroedinger.c:298
-msgid "small - use small code blocks"
-msgstr "小 - 使用小编码块"
-
-#: modules/codec/schroedinger.c:299
-msgid "medium - use medium sized code blocks"
-msgstr "中 - 使用中等大小的编码块"
-
-#: modules/codec/schroedinger.c:300
-msgid "large - use large code blocks"
-msgstr "大 - 使用大编码块"
-
-#: modules/codec/schroedinger.c:301
-msgid "full - One code block per subband"
-msgstr "全 - 每个子带一个编码块"
-
-#: modules/codec/schroedinger.c:306
-msgid "Enable hierarchical Motion Estimation"
-msgstr "启用分层运动估算"
-
-#: modules/codec/schroedinger.c:310
-msgid "Number of levels of downsampling"
-msgstr "缩减采样的级别"
-
-#: modules/codec/schroedinger.c:311
-msgid "Number of levels of downsampling in hierarchical motion estimation mode"
-msgstr "分层运动估计模式缩减采样层级数"
-
-#: modules/codec/schroedinger.c:315
-msgid "Enable Global Motion Estimation"
-msgstr "启用全局运动估算"
-
-#: modules/codec/schroedinger.c:319
-msgid "Enable Phase Correlation Estimation"
-msgstr "启用相位关联估算"
-
-#: modules/codec/schroedinger.c:323
-msgid "Enable Scene Change Detection"
-msgstr "启用场景变化侦测"
-
-#: modules/codec/schroedinger.c:327
-msgid "Force Profile"
-msgstr "强制配置文件"
-
-#: modules/codec/schroedinger.c:339
-msgid "VC2 Low Delay Profile"
-msgstr "VC2 低延迟配置文件"
-
-#: modules/codec/schroedinger.c:340
-msgid "VC2 Simple Profile"
-msgstr "VC2 简单配置文件"
-
-#: modules/codec/schroedinger.c:341
-msgid "VC2 Main Profile"
-msgstr "VC2 主配置文件"
-
-#: modules/codec/schroedinger.c:342
-msgid "Main Profile"
-msgstr "主配置文件"
-
-#: modules/codec/schroedinger.c:363
-msgid "Dirac video decoder using libschroedinger"
-msgstr "Dirac 视频解码器，使用 libschroedinger"
-
-#: modules/codec/schroedinger.c:371
-msgid "Dirac video encoder using libschroedinger"
-msgstr "Dirac 视频编码器，使用 libschroedinger"
 
 #: modules/codec/scte18.c:41
 #, fuzzy
@@ -14963,14 +14592,6 @@ msgstr "如果文件已经存在，它将不会被覆盖。"
 msgid "File dumper"
 msgstr "文件转储器"
 
-#: modules/demux/dirac.c:41
-msgid "Value to adjust dts by"
-msgstr "dts 数值调整量"
-
-#: modules/demux/dirac.c:54
-msgid "Dirac video demuxer"
-msgstr "Dirac 视频分流器"
-
 #: modules/demux/directory.c:94
 #, fuzzy
 msgid "Directory import"
@@ -16001,14 +15622,24 @@ msgstr "VLC media player 及 VideoLAN 为 VideoLAN Association 的注册商标�
 
 #: modules/gui/macosx/VLCAboutWindowController.m:134
 #: modules/gui/qt/dialogs/help.cpp:94
+#, fuzzy
+#| msgid ""
+#| "<p>VLC media player is a free and open source media player, encoder, and "
+#| "streamer made by the volunteers of the <a href=\"http://www.videolan.org/"
+#| "\"><span style=\" text-decoration: underline; color:#0057ae;\">VideoLAN</"
+#| "span></a> community.</p><p>VLC uses its internal codecs, works on "
+#| "essentially every popular platform, and can read almost all files, CDs, "
+#| "DVDs, network streams, capture cards and other media formats!</p><p><a "
+#| "href=\"http://www.videolan.org/contribute/\"><span style=\" text-"
+#| "decoration: underline; color:#0057ae;\">Help and join us!</span></a>"
 msgid ""
 "<p>VLC media player is a free and open source media player, encoder, and "
 "streamer made by the volunteers of the <a href=\"http://www.videolan.org/"
 "\"><span style=\" text-decoration: underline; color:#0057ae;\">VideoLAN</"
 "span></a> community.</p><p>VLC uses its internal codecs, works on "
 "essentially every popular platform, and can read almost all files, CDs, "
-"DVDs, network streams, capture cards and other media formats!</p><p><a href="
-"\"http://www.videolan.org/contribute/\"><span style=\" text-decoration: "
+"DVDs, network streams, capture cards and other media formats!</p><p><a "
+"href=\"http://www.videolan.org/contribute/\"><span style=\" text-decoration: "
 "underline; color:#0057ae;\">Help and join us!</span></a>"
 msgstr ""
 "<p>VLC media player 是由 <a href=\"http://www.videolan.org/\"><span style=\" "
@@ -16308,8 +15939,8 @@ msgstr "输入已被更改"
 
 #: modules/gui/macosx/VLCBookmarksWindowController.m:215
 msgid ""
-"Input has changed, unable to save bookmark. Suspending playback with \"Pause"
-"\" while editing bookmarks to ensure to keep the same input."
+"Input has changed, unable to save bookmark. Suspending playback with "
+"\"Pause\" while editing bookmarks to ensure to keep the same input."
 msgstr ""
 "输入已被更改，无法保存书签。编辑书签时请通过“暂停”暂时停止播放，以确保保持输"
 "入串流不变。"
@@ -21958,8 +21589,8 @@ msgstr "Lua 界面配置"
 
 #: modules/lua/vlc.c:53
 msgid ""
-"Lua interface configuration string. Format is: '[\"<interface module name>"
-"\"] = { <option> = <value>, ...}, ...'."
+"Lua interface configuration string. Format is: '[\"<interface module "
+"name>\"] = { <option> = <value>, ...}, ...'."
 msgstr ""
 "Lua 界面配置字串。格式为: “[\"<界面模块名称>\"] = { <选项> = <值"
 ">, ...}, ...”。"
@@ -23370,10 +23001,6 @@ msgstr "avparser 封包器"
 #: modules/packetizer/copy.c:48
 msgid "Copy packetizer"
 msgstr "复制封包器"
-
-#: modules/packetizer/dirac.c:87
-msgid "Dirac packetizer"
-msgstr "Dirac 封包器"
 
 #: modules/packetizer/dts.c:47
 msgid "DTS audio packetizer"
@@ -29175,6 +28802,295 @@ msgstr "AAAA; "
 msgid "Media Manager List"
 msgstr "媒体管理器列表"
 
+#~ msgid "4:2:0"
+#~ msgstr "4:2:0"
+
+#~ msgid "4:2:2"
+#~ msgstr "4:2:2"
+
+#~ msgid "4:4:4"
+#~ msgstr "4:4:4"
+
+#~ msgid "Rate control method"
+#~ msgstr "速率控制方法"
+
+#~ msgid "Method used to encode the video sequence"
+#~ msgstr "用于编码视频序列的方式"
+
+#~ msgid "Constant noise threshold mode"
+#~ msgstr "恒定噪点阈值模式"
+
+#~ msgid "Constant bitrate mode (CBR)"
+#~ msgstr "恒定码率模式 (CBR)"
+
+#~ msgid "Low Delay mode"
+#~ msgstr "低延迟模式"
+
+#~ msgid "Lossless mode"
+#~ msgstr "无损模式"
+
+#~ msgid "Constant lambda mode"
+#~ msgstr "持续 lambda 模式"
+
+#~ msgid "Constant error mode"
+#~ msgstr "恒定错误模式"
+
+#~ msgid "Constant quality mode"
+#~ msgstr "恒定质量模式"
+
+#~ msgid "GOP structure"
+#~ msgstr "GOP 结构"
+
+#~ msgid "GOP structure used to encode the video sequence"
+#~ msgstr "用于编码视频序列的 GOP 结构"
+
+#~ msgid ""
+#~ "No fixed gop structure. A picture can be intra or inter and refer to "
+#~ "previous or future pictures."
+#~ msgstr "无固定 gop 结构。画面可以帧内或帧间，可引用先前或后面的画面。"
+
+#~ msgid "I-frame only sequence"
+#~ msgstr "仅 I-帧的序列"
+
+#~ msgid "Inter pictures refere to previous pictures only"
+#~ msgstr "仅帧间引用先前画面"
+
+#~ msgid "Inter pictures can refer to previous or future pictures"
+#~ msgstr "帧间引用先前或后面的画面"
+
+#~ msgid "Constant quality factor"
+#~ msgstr "恒定质量系数"
+
+#~ msgid "Quality factor to use in constant quality mode"
+#~ msgstr "用于恒定质量模式的质量系数"
+
+#~ msgid "Noise Threshold"
+#~ msgstr "噪点阈值"
+
+#~ msgid "Noise threshold to use in constant noise threshold mode"
+#~ msgstr "用于恒定噪点阈值模式的噪点阈值"
+
+#~ msgid "CBR bitrate (kbps)"
+#~ msgstr "CBR 位率 (kbps)"
+
+#~ msgid "Target bitrate in kbps when encoding in constant bitrate mode"
+#~ msgstr "以恒定码率模式编码时的目标码率，单位为 kbps"
+
+#~ msgid "Maximum bitrate (kbps)"
+#~ msgstr "最高码率 (kbps)"
+
+#~ msgid "Maximum bitrate in kbps when encoding in constant bitrate mode"
+#~ msgstr "以恒定码率模式编码时的最高码率，单位为 kbps"
+
+#~ msgid "Minimum bitrate (kbps)"
+#~ msgstr "最低码率 (kbps)"
+
+#~ msgid "Minimum bitrate in kbps when encoding in constant bitrate mode"
+#~ msgstr "以恒定码率模式编码时的最低码率，单位为 kbps"
+
+#~ msgid "GOP length"
+#~ msgstr "GOP 长度"
+
+#~ msgid ""
+#~ "Number of pictures between successive sequence headers i.e. length of the "
+#~ "group of pictures"
+#~ msgstr "连续序列头之间的画面数，即画面组长度"
+
+#~ msgid "Prefilter"
+#~ msgstr "预过滤器"
+
+#~ msgid "Enable adaptive prefiltering"
+#~ msgstr "启用自适应预过滤"
+
+#~ msgid "No pre-filtering"
+#~ msgstr "无预过滤"
+
+#~ msgid "Centre Weighted Median"
+#~ msgstr "中央重心"
+
+#~ msgid "Gaussian Low Pass Filter"
+#~ msgstr "高斯低通滤镜"
+
+#~ msgid "Add Noise"
+#~ msgstr "增噪"
+
+#~ msgid "Gaussian Adaptive Low Pass Filter"
+#~ msgstr "高斯自适应低通滤镜"
+
+#~ msgid "Low Pass Filter"
+#~ msgstr "低通滤镜"
+
+#~ msgid "Amount of prefiltering"
+#~ msgstr "预过滤总量"
+
+#~ msgid "Higher value implies more prefiltering"
+#~ msgstr "较高数值意味着更多的预过滤"
+
+#~ msgid "Picture coding mode"
+#~ msgstr "画面编码模式"
+
+#~ msgid ""
+#~ "Field coding is where interlaced fields are coded separately as opposed "
+#~ "to a pseudo-progressive frame"
+#~ msgstr "分场编码将隔行扫描的场分开编码，而不是伪逐行扫描帧"
+
+#~ msgid "auto - let encoder decide based upon input (Best)"
+#~ msgstr "自动 - 让编码器根据输入数据决定 (最佳)"
+
+#~ msgid "force coding frame as single picture"
+#~ msgstr "强制将帧编码为单一画面"
+
+#~ msgid "force coding frame as separate interlaced fields"
+#~ msgstr "强制将帧编码为两个隔行扫描场"
+
+#~ msgid "Size of motion compensation blocks"
+#~ msgstr "运动补偿块尺寸"
+
+#~ msgid "automatic - let encoder decide based upon input (Best)"
+#~ msgstr "自动 - 让编码器根据输入数据决定 (最佳)"
+
+#~ msgid "small - use small motion compensation blocks"
+#~ msgstr "小 - 使用小运动补偿块"
+
+#~ msgid "medium - use medium motion compensation blocks"
+#~ msgstr "中 - 使用中运动补偿块"
+
+#~ msgid "large - use large motion compensation blocks"
+#~ msgstr "大 - 使用大运动补偿块"
+
+#~ msgid "Overlap of motion compensation blocks"
+#~ msgstr "运动补偿块重叠"
+
+#~ msgid "none - Motion compensation blocks do not overlap"
+#~ msgstr "无 - 运动补偿块不重叠"
+
+#~ msgid "partial - Motion compensation blocks only partially overlap"
+#~ msgstr "部分 - 运动补偿块仅部分重叠"
+
+#~ msgid "full - Motion compensation blocks fully overlap"
+#~ msgstr "全 - 运动补偿块完全重叠"
+
+#~ msgid "Motion Vector precision"
+#~ msgstr "运动向量精度"
+
+#~ msgid "Motion Vector precision in pels"
+#~ msgstr "运动向量的精度，单位为像素"
+
+#~ msgid "Three component motion estimation"
+#~ msgstr "三原色动作估计"
+
+#~ msgid "Use chroma as part of the motion estimation process"
+#~ msgstr "将色度用作运动估算过程的一部分"
+
+#~ msgid "Intra picture DWT filter"
+#~ msgstr "画面内 DWT 滤镜"
+
+#~ msgid "Inter picture DWT filter"
+#~ msgstr "画面间 DWT 滤镜"
+
+#~ msgid "Number of DWT iterations"
+#~ msgstr "DWT 迭代数目"
+
+#~ msgid "Also known as DWT levels"
+#~ msgstr "又称 DWT 级别"
+
+#~ msgid "Enable multiple quantizers"
+#~ msgstr "启用多个量化器"
+
+#~ msgid "Enable multiple quantizers per subband (one per codeblock)"
+#~ msgstr "为每个子带启用多个量化器 (每个编码块一个)"
+
+#~ msgid "Disable arithmetic coding"
+#~ msgstr "禁用算术编码"
+
+#~ msgid "Use variable length codes instead, useful for very high bitrates"
+#~ msgstr "改用可变长编码，码率非常高时很有用"
+
+#~ msgid "perceptual weighting method"
+#~ msgstr "感知加权法"
+
+#~ msgid "perceptual distance"
+#~ msgstr "感知距离"
+
+#~ msgid "perceptual distance to calculate perceptual weight"
+#~ msgstr "计算感知权重的感知距离"
+
+#~ msgid "Horizontal slices per frame"
+#~ msgstr "每帧水平切片数"
+
+#~ msgid "Number of horizontal slices per frame in low delay mode"
+#~ msgstr "低延迟模式下每帧水平切片数"
+
+#~ msgid "Vertical slices per frame"
+#~ msgstr "每帧垂直切片数"
+
+#~ msgid "Number of vertical slices per frame in low delay mode"
+#~ msgstr "低延迟模式下每帧垂直切片数"
+
+#~ msgid "Size of code blocks in each subband"
+#~ msgstr "各子带编码块大小"
+
+#~ msgid "small - use small code blocks"
+#~ msgstr "小 - 使用小编码块"
+
+#~ msgid "medium - use medium sized code blocks"
+#~ msgstr "中 - 使用中等大小的编码块"
+
+#~ msgid "large - use large code blocks"
+#~ msgstr "大 - 使用大编码块"
+
+#~ msgid "full - One code block per subband"
+#~ msgstr "全 - 每个子带一个编码块"
+
+#~ msgid "Enable hierarchical Motion Estimation"
+#~ msgstr "启用分层运动估算"
+
+#~ msgid "Number of levels of downsampling"
+#~ msgstr "缩减采样的级别"
+
+#~ msgid ""
+#~ "Number of levels of downsampling in hierarchical motion estimation mode"
+#~ msgstr "分层运动估计模式缩减采样层级数"
+
+#~ msgid "Enable Global Motion Estimation"
+#~ msgstr "启用全局运动估算"
+
+#~ msgid "Enable Phase Correlation Estimation"
+#~ msgstr "启用相位关联估算"
+
+#~ msgid "Enable Scene Change Detection"
+#~ msgstr "启用场景变化侦测"
+
+#~ msgid "Force Profile"
+#~ msgstr "强制配置文件"
+
+#~ msgid "VC2 Low Delay Profile"
+#~ msgstr "VC2 低延迟配置文件"
+
+#~ msgid "VC2 Simple Profile"
+#~ msgstr "VC2 简单配置文件"
+
+#~ msgid "VC2 Main Profile"
+#~ msgstr "VC2 主配置文件"
+
+#~ msgid "Main Profile"
+#~ msgstr "主配置文件"
+
+#~ msgid "Dirac video decoder using libschroedinger"
+#~ msgstr "Dirac 视频解码器，使用 libschroedinger"
+
+#~ msgid "Dirac video encoder using libschroedinger"
+#~ msgstr "Dirac 视频编码器，使用 libschroedinger"
+
+#~ msgid "Value to adjust dts by"
+#~ msgstr "dts 数值调整量"
+
+#~ msgid "Dirac video demuxer"
+#~ msgstr "Dirac 视频分流器"
+
+#~ msgid "Dirac packetizer"
+#~ msgstr "Dirac 封包器"
+
 #, fuzzy
 #~ msgid "The Sound Font file (SF2/DLS) to use for synthesis."
 #~ msgstr "用于软件合成器的音源文件。"
@@ -29367,9 +29283,9 @@ msgstr "媒体管理器列表"
 #~ msgstr "RTSP 密码"
 
 #~ msgid ""
-#~ "HTTP proxy to be used It must be of the form http://[user[:pass]@]myproxy."
-#~ "mydomain:myport/ ; if empty, the http_proxy environment variable will be "
-#~ "tried."
+#~ "HTTP proxy to be used It must be of the form http://"
+#~ "[user[:pass]@]myproxy.mydomain:myport/ ; if empty, the http_proxy "
+#~ "environment variable will be tried."
 #~ msgstr ""
 #~ "要使用的 HTTP 代理。必须按该形式给出：http://[用户名[:密码]@]我的代理.我的"
 #~ "域名:我的端口/ ;如果为空，将会尝试使用 http_proxy 环境变量。"
@@ -29772,8 +29688,8 @@ msgstr "媒体管理器列表"
 #~ "the current screen or TV streams if the EyeTV application is installed."
 #~ msgstr ""
 #~ "4 个选项卡可选择不同的媒体输入来源。选择“文件”可打开文件，选择“光盘”可打"
-#~ "开 DVD、音频 CD、蓝光碟等光学媒体，选择“网络”可打开网络上的流媒体，或选"
-#~ "择“捕获”打开其他输入设备，如话筒、摄像头、当前屏幕或电视信号（需要安装 "
+#~ "开 DVD、音频 CD、蓝光碟等光学媒体，选择“网络”可打开网络上的流媒体，或选择"
+#~ "“捕获”打开其他输入设备，如话筒、摄像头、当前屏幕或电视信号（需要安装 "
 #~ "EyeTV 应用程序）。"
 
 #~ msgid ""
@@ -30991,8 +30907,8 @@ msgstr "媒体管理器列表"
 #~ msgstr ""
 #~ "这是一个用 ',' 分隔的字符串，各对象应以 '+' 或 '-' 为前缀来分别表示启用或"
 #~ "禁用。关键字 'all' 代表所有对象。对象可以用类型或模块名称来表示。对用准确"
-#~ "名称表示的对象应用的规则将比对类型应用的规则优先。注意，您仍然需要使用 -"
-#~ "vvv 来真正显示出调试信息。"
+#~ "名称表示的对象应用的规则将比对类型应用的规则优先。注意，您仍然需要使用 "
+#~ "-vvv 来真正显示出调试信息。"
 
 #~ msgid ""
 #~ "You can manually select a language for the interface. The system language "
@@ -31371,14 +31287,15 @@ msgstr "媒体管理器列表"
 #~ msgid ""
 #~ "Force the subtiles format. Valid values are : \"microdvd\", \"subrip\", "
 #~ "\"subviewer\", \"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", "
-#~ "\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb"
-#~ "\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
+#~ "\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", "
+#~ "\"psb\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
 #~ "autodetection, this should always work)."
 #~ msgstr ""
 #~ "强制字幕格式。可用的值是 : \"microdvd\", \"subrip\", \"subviewer\", "
 #~ "\"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", \"dvdsubtitle\", "
-#~ "\"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb\", \"realtext"
-#~ "\", \"dks\", \"subviewer1\",  和 \"auto\" (自动检测，此选项应该总是有效)。"
+#~ "\"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb\", "
+#~ "\"realtext\", \"dks\", \"subviewer1\",  和 \"auto\" (自动检测，此选项应该"
+#~ "总是有效)。"
 
 #~ msgid "Do not complain on encrypted PES."
 #~ msgstr "不在加密的 PES 中显示。"
@@ -31512,9 +31429,9 @@ msgstr "媒体管理器列表"
 #~ msgstr "指定日志格式。可用的选择有 \"text\" (默认) 和 \"html\"。"
 
 #~ msgid ""
-#~ "Specify the log format. Available choices are \"text\" (default), \"html"
-#~ "\", \"syslog\" (special mode to send to syslog instead of file), and "
-#~ "\"android\" (special mode to send to android logging facility)."
+#~ "Specify the log format. Available choices are \"text\" (default), "
+#~ "\"html\", \"syslog\" (special mode to send to syslog instead of file), "
+#~ "and \"android\" (special mode to send to android logging facility)."
 #~ msgstr ""
 #~ "指定日志格式。可用的选择有 \"text\" (默认)、\"html\"、\"syslog\" (发送到系"
 #~ "统日志而非文件的特殊模式) 以及 \"android\" (发送到 android 日志设施的特殊"
@@ -31723,8 +31640,8 @@ msgstr "媒体管理器列表"
 #~ msgstr "00000; "
 
 #~ msgid ""
-#~ "Specify the log format. Available choices are \"text\" (default), \"html"
-#~ "\", and \"syslog\" (special mode to send to syslog instead of file."
+#~ "Specify the log format. Available choices are \"text\" (default), "
+#~ "\"html\", and \"syslog\" (special mode to send to syslog instead of file."
 #~ msgstr ""
 #~ "指定日志格式。可用的选择有 \"text\" (默认), \"html\", 和 \"syslog\" (发送"
 #~ "到系统日志代替文件的特殊模式)。"
@@ -31734,8 +31651,8 @@ msgstr "媒体管理器列表"
 
 #~ msgid ""
 #~ "Use a unique dbus service id to identify this VLC instance on the DBUS "
-#~ "bus. The process identifier (PID) is added to the service name: org.mpris."
-#~ "vlc-<pid>"
+#~ "bus. The process identifier (PID) is added to the service name: "
+#~ "org.mpris.vlc-<pid>"
 #~ msgstr ""
 #~ "使用唯一 dbus 服务 id 在 DBUS 总线声明本 VLC 示例。进程 id (PID) 将被添加"
 #~ "到服务名称: org.mpris.vlc-<pid>"
@@ -31784,8 +31701,8 @@ msgstr "媒体管理器列表"
 #~ msgstr "球的颜色，可以是 \"red\", \"blue\" 和 \"green\" 中的一个。"
 
 #~ msgid ""
-#~ "One of \"u8\", \"s8\", \"u16\", \"s16\", \"u16_le\", \"s16_le\", \"u16_be"
-#~ "\", \"s16_be\", \"fixed32\", \"float32\" or \"spdif\""
+#~ "One of \"u8\", \"s8\", \"u16\", \"s16\", \"u16_le\", \"s16_le\", "
+#~ "\"u16_be\", \"s16_be\", \"fixed32\", \"float32\" or \"spdif\""
 #~ msgstr ""
 #~ "\"u8\", \"s8\", \"u16\", \"s16\", \"u16_le\", \"s16_le\", \"u16_be\", "
 #~ "\"s16_be\", \"fixed32\", \"float32\" 或 \"spdif\" 中的一个"
@@ -32529,20 +32446,21 @@ msgstr "媒体管理器列表"
 #~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; "
 #~ "font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.example.com/stream.avi</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.example.com/stream.avi</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtp://@:1234</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtp://@:1234</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></html>"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></"
+#~ "html>"
 #~ msgstr ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -32552,20 +32470,21 @@ msgstr "媒体管理器列表"
 #~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; "
 #~ "font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.example.com/stream.avi</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.example.com/stream.avi</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtp://@:1234</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtp://@:1234</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></html>"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></"
+#~ "html>"
 
 #~ msgid "Use system codecs if available (better quality, but dangerous)"
 #~ msgstr "如果可用则使用系统编解码器 (质量较好，但有危险)"
@@ -33120,8 +33039,8 @@ msgstr "媒体管理器列表"
 #~ "Use this option to run as standalone Qt/Embedded GUI Server. This option "
 #~ "is equivalent to the -qws option from normal Qt."
 #~ msgstr ""
-#~ "使用此选项运行为单一的 Qt/Embedded GUI 服务器。此选项等同于普通 Qt 的 -"
-#~ "qws 选项。"
+#~ "使用此选项运行为单一的 Qt/Embedded GUI 服务器。此选项等同于普通 Qt 的 "
+#~ "-qws 选项。"
 
 #~ msgid "Qt Embedded GUI helper"
 #~ msgstr "Qt 嵌入 GUI 帮助器"
@@ -33390,20 +33309,21 @@ msgstr "媒体管理器列表"
 #~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; "
 #~ "font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.example.com/stream.avi</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.example.com/stream.avi</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtp://@1234</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtp://@1234</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></html>"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></"
+#~ "html>"
 #~ msgstr ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -33413,20 +33333,21 @@ msgstr "媒体管理器列表"
 #~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:8pt; "
 #~ "font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.example.com/stream.avi</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.example.com/stream.avi</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtp://@:1234</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtp://@:1234</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">mms://mms.examples.com/stream.asx</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">rtsp://server.example.org:8080/test.sdp</span></p>\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:"
-#~ "#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></html>"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" "
+#~ "color:#838383;\">http://www.yourtube.com/watch?v=gg64x</span></p></body></"
+#~ "html>"
 
 #~ msgid ""
 #~ "Channel of the card to use (Usually, 0 = tuner, 1 = composite, 2 = "
@@ -33488,8 +33409,8 @@ msgstr "媒体管理器列表"
 #~ msgstr ""
 #~ "这是一个用 ',' 分隔的字符串，各对象应以 '+' 或 '-' 为前缀来分别表示启用或"
 #~ "禁用。关键字 'all' 代表所有对象。对象可以用类型或模块名称来表示。对用准确"
-#~ "名称表示的对象应用的规则将比对类型应用的规则优先。注意，您仍然需要使用 -"
-#~ "vvv 来真正显示出调试信息。"
+#~ "名称表示的对象应用的规则将比对类型应用的规则优先。注意，您仍然需要使用 "
+#~ "-vvv 来真正显示出调试信息。"
 
 #~ msgid ""
 #~ "VLC does not support the audio or video format \"%4.4s\". Unfortunately "
@@ -33706,10 +33627,10 @@ msgstr "媒体管理器列表"
 
 #, fuzzy
 #~ msgid ""
-#~ "Format of the string to send to Telepathy.Defaults to \"Artist - Title"
-#~ "\" ($a - $t). You can use the following substitutions: $a Artist, $b "
-#~ "Album, $c Copyright, $d Description, $e Encoder, $g Genre, $l Language, "
-#~ "$n number, $p Now Playing, $r Rating, $s Subtitles language, $t Title, $u "
+#~ "Format of the string to send to Telepathy.Defaults to \"Artist - Title\" "
+#~ "($a - $t). You can use the following substitutions: $a Artist, $b Album, "
+#~ "$c Copyright, $d Description, $e Encoder, $g Genre, $l Language, $n "
+#~ "number, $p Now Playing, $r Rating, $s Subtitles language, $t Title, $u "
 #~ "URL, $A Date, $B Bitrate, $C Chapter, $D Duration, $F URI, $I Video "
 #~ "Title, $L Time Remaining, $N Name, $O Audio language, $P Position, $R "
 #~ "Rate, $S Sample rate, $T Time elapsed, $U Publisher, $V Volume"
@@ -33776,8 +33697,8 @@ msgstr "媒体管理器列表"
 #~ "Acceleration will thus be disabled. Performance may be degraded severely "
 #~ "if the resolution is large."
 #~ msgstr ""
-#~ "XVideo 渲染加速驱动程序不支持所需的分辨率 %ux%u px 但支持 %<PRIu32>x"
-#~ "%<PRIu32> px。\n"
+#~ "XVideo 渲染加速驱动程序不支持所需的分辨率 %ux%u px 但支持 "
+#~ "%<PRIu32>x%<PRIu32> px。\n"
 #~ "因此加速将禁用。若分辨率较大，性能可能会严重下降。"
 
 #~ msgid ""
@@ -33803,13 +33724,13 @@ msgstr "媒体管理器列表"
 #, fuzzy
 #~ msgid ""
 #~ "Your video output acceleration driver does not support the required "
-#~ "resolution: %ux%u pixels. The maximum supported resolution is %<PRIu32>x"
-#~ "%<PRIu32>.\n"
+#~ "resolution: %ux%u pixels. The maximum supported resolution is "
+#~ "%<PRIu32>x%<PRIu32>.\n"
 #~ "Video output acceleration will be disabled. However, rendering videos "
 #~ "with overly large resolution may cause severe performance degration."
 #~ msgstr ""
-#~ "XVideo 渲染加速驱动程序不支持所需的分辨率 %ux%u px 但支持 %<PRIu32>x"
-#~ "%<PRIu32> px。\n"
+#~ "XVideo 渲染加速驱动程序不支持所需的分辨率 %ux%u px 但支持 "
+#~ "%<PRIu32>x%<PRIu32> px。\n"
 #~ "因此加速将禁用。若分辨率较大，性能可能会严重下降。"
 
 #~ msgid "Select a matching identity"
@@ -38125,16 +38046,16 @@ msgstr "媒体管理器列表"
 
 #, fuzzy
 #~ msgid ""
-#~ "Name of the audio device to use. If you don't specify anything, \"/dev/dsp"
-#~ "\" will be used for OSS."
+#~ "Name of the audio device to use. If you don't specify anything, \"/dev/"
+#~ "dsp\" will be used for OSS."
 #~ msgstr ""
 #~ "DirectShow 插件使用的音频设备名称。如果您不指定任何设备，则将使用默认的设"
 #~ "备。"
 
 #, fuzzy
 #~ msgid ""
-#~ "Name of the audio device to use. If you don't specify anything, \"/dev/dsp"
-#~ "\" will be used for OSS, \"hw\" for Alsa."
+#~ "Name of the audio device to use. If you don't specify anything, \"/dev/"
+#~ "dsp\" will be used for OSS, \"hw\" for Alsa."
 #~ msgstr ""
 #~ "DirectShow 插件使用的音频设备名称。如果您不指定任何设备，则将使用默认的设"
 #~ "备。"

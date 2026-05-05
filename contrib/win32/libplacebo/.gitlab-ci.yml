@@ -1,0 +1,205 @@
+stages:
+    - compile
+    - test
+    - sanitize
+
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    IMAGE_UBUNTU_JAMMY: registry.videolan.org/libplacebo-ubuntu-jammy:20230131170906
+    IMAGE_UBUNTU_JAMMY_AARCH: registry.videolan.org/libplacebo-ubuntu-jammy-aarch64:20230203024122
+
+linux:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: compile
+    tags:
+        - docker
+        - amd64
+    script:
+        - meson build --buildtype release
+                      --werror
+                      -Dtests=true
+                      -Dshaderc=enabled
+                      -Dglslang=enabled
+        - ninja -C build
+
+static:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: compile
+    tags:
+        - docker
+        - amd64
+    script:
+        - meson build --buildtype release
+                      --default-library static
+                      --werror
+                      -Dshaderc=enabled
+                      -Dglslang=enabled
+        - ninja -C build
+
+win32:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: compile
+    tags:
+        - docker
+        - amd64
+    script:
+        - meson build --buildtype release
+                      --werror
+                      -Dtests=true
+                      -Dd3d11=enabled
+                      --cross-file /opt/crossfiles/i686-w64-mingw32.meson
+        - ninja -C build
+        - cd build && meson test -t 5 -v --num-processes=1
+
+win64:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: compile
+    tags:
+        - docker
+        - amd64
+    script:
+        - meson build --buildtype release
+                      --werror
+                      -Dtests=true
+                      -Dd3d11=enabled
+                      --cross-file /opt/crossfiles/x86_64-w64-mingw32.meson
+        - ninja -C build
+        - cd build && meson test -t 5 -v --num-processes=1
+
+aarch64:
+    image: $IMAGE_UBUNTU_JAMMY_AARCH
+    stage: compile
+    tags:
+        - docker
+        - aarch64
+    script:
+        - meson build --buildtype release --werror -Dtests=true
+        - ninja -C build
+        - cd build && meson test -t 5 -v --num-processes=1
+
+macos:
+    stage: compile
+    tags:
+        - amd64
+        - monterey
+    script:
+        - meson build --buildtype release
+                      -Ddefault_library=both
+                      -Dtests=true
+                      --werror
+        - ninja -C build
+        - cd build && meson test -t 5 -v --num-processes=1
+
+scan:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: compile
+    tags:
+        - docker
+        - amd64
+    script:
+        - env CC=clang CXX=clang++ meson build --buildtype debugoptimized
+                                               --werror
+                                               -Dtests=true
+                                               -Ddemos=true
+                                               -Dbench=true
+                                               -Dshaderc=enabled
+                                               -Dglslang=enabled
+        - ninja -C build scan-build
+
+llvmpipe:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: test
+    tags:
+        - docker
+        - amd64
+    script:
+        - meson build --buildtype release
+                      --werror
+                      -Dtests=true
+                      -Ddemos=false
+                      -Dc_args='-DCI_ALLOW_SW'
+                      -Dshaderc=enabled
+                      -Dglslang=enabled
+        - ninja -C build
+        - cd build && meson test -t 20 -v --num-processes=1
+
+gpu:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: test
+    tags:
+        - gpu
+    script:
+        - meson build --buildtype release
+                      --werror
+                      -Dtests=true
+                      -Ddemos=false
+                      -Ddebug-abort=true
+                      -Dshaderc=disabled
+                      -Db_coverage=true
+        - ninja -C build
+        - vulkaninfo
+        - cd build && meson test -t 5 -v --num-processes=1
+        - ninja coverage-html
+        - mv meson-logs/coveragereport ../coverage
+        - ninja coverage-xml
+        - grep -Eo 'line-rate="[^"]+"' meson-logs/coverage.xml | head -n 1 |
+          grep -Eo '[0-9.]+' | awk '{ print "coverage:", $1 * 100 } '
+    coverage: '/^coverage: (\d+.\d+)$/'
+    artifacts:
+        expose_as: 'Coverage HTML report'
+        paths:
+            - coverage/
+        reports:
+            coverage_report:
+              coverage_format: cobertura
+              path: build/meson-logs/coverage.xml
+
+asan:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: sanitize
+    tags:
+        - gpu
+    script:
+        - meson build --buildtype debugoptimized
+                      -Dtests=true
+                      -Ddemos=false
+                      -Dshaderc=disabled
+                      -Db_sanitize=address
+        - ninja -C build
+        - cd build && time meson test -t 5 -v --num-processes=1
+
+msan:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: sanitize
+    tags:
+        - gpu
+    variables:
+        MSAN_OPTIONS: 'exitcode=1'
+    script:
+        - env CC=clang CXX=clang++ meson build --buildtype debugoptimized
+                                               -Dtests=true
+                                               -Ddemos=false
+                                               -Dc_args='-DMSAN'
+                                               -Dglslang=disabled
+                                               -Db_sanitize=memory
+                                               -Db_lundef=false
+        - ninja -C build
+        - cd build && time meson test -t 5 -v --num-processes=1
+
+ubsan:
+    image: $IMAGE_UBUNTU_JAMMY
+    stage: sanitize
+    tags:
+        - gpu
+    variables:
+        UBSAN_OPTIONS: 'print_stacktrace=1:halt_on_error=1'
+    script:
+        - env CC=clang CXX=clang++ meson build --buildtype debugoptimized
+                                               -Dtests=true
+                                               -Ddemos=false
+                                               -Dc_args='-fPIE'
+                                               -Dglslang=disabled
+                                               -Db_sanitize=undefined
+                                               -Db_lundef=false
+        - ninja -C build
+        - cd build && time meson test -t 5 -v --num-processes=1

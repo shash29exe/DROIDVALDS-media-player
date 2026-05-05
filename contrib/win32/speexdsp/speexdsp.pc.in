@@ -1,0 +1,14 @@
+# libspeexdsp pkg-config source file
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: speexdsp
+Description: Speexdsp is a speech processing library that goes along with the Speex codec
+Version: @PACKAGE_VERSION@
+Conflicts:
+Libs:  -L${libdir} -lspeexdsp  @LIBM@
+Cflags:  -I${includedir} 
+Requires:  @FFT_PKGCONFIG@ 

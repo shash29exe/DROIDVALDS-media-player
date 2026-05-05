@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=@fluidlite_libdir@
+includedir=@fluidlite_includedir@
+
+Name: fluidlite
+Description: Software SoundFont Synthesizer
+URL: https://github.com/divideconcept/FluidLite
+Version: @fluidlite_VERSION@
+Libs:  -L${libdir} -lfluidlite  @PC_LIBS@
+Cflags:  -I${includedir}  -DFLUIDLITE_STATIC
+Requires:   @PC_REQUIRES@

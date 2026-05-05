@@ -1,0 +1,16 @@
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/libz.a
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/zlib/ZLIB-static.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/zlib/ZLIB-static-relwithdebinfo.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/zlib/ZLIBConfig.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/zlib/ZLIBConfigVersion.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/zconf.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/zlib.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/man/man3/zlib.3
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/LICENSE
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/algorithm.txt
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/crc-doc.1.0.pdf
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/rfc1950.txt
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/rfc1951.txt
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/rfc1952.txt
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/share/doc/zlib/zlib/txtvsbin.txt
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/pkgconfig/zlib.pc

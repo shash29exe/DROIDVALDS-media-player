@@ -1,0 +1,9 @@
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/LibXml2.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/package.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/package_source.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/edit_cache.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/rebuild_cache.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/list_install_components.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/install.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/install/local.dir
+/home/shash29/vlc/contrib/win32/libxml2/vlc_build/CMakeFiles/install/strip.dir

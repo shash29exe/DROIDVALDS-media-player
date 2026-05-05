@@ -108,8 +108,7 @@ FocusScope {
             sourceSize: Qt.size(0, orientation === Qt.Vertical ? VLCStyle.colWidth(1)
                                                                : buttons.implicitHeight * 1.618 * _eDPR) // 1.618 = golden ratio approximation
 
-            source: MainCtx.useXmasCone() ? "qrc:///logo/vlc48-xmas.png" // TODO: new xmas cone designs
-                                          : SVGColorImage.colorize("qrc:///misc/cone.svg").accent(theme.accent).uri()
+            source: "qrc:///logo/vlc256.png"
 
             Connections {
                 target: MainCtx

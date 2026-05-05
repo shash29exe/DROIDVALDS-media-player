@@ -1,0 +1,401 @@
+librist - Reliable Internet Stream Transport
+============================================
+
+A library implementing the Video Services Forum (VSF) Technical
+Recommendations TR-06-1 (Simple Profile) and TR-06-2 (Main Profile).
+
+
+Changes for 0.2.14 (2026-04-25):
+--------------------------------
+
+ABI/API:
+  - ABI version 10:2:6 (soversion 4, binary-compatible with 0.2.13)
+  - API version 4.7.0 (unchanged)
+
+  Maintenance release. No public API or ABI signature changes.
+  Existing 0.2.13 installations remain binary-compatible; downstream
+  consumers do not need to recompile and relink.
+
+Bug Fixes:
+
+  - fix(sender): serialize retry-queue dequeue under peerlist_lock
+    to avoid a use-after-free. The retry-queue cleanup path could
+    race with peer teardown and dereference a peer that had already
+    been freed on a sibling thread, occasionally producing a sender
+    crash under sustained NACK pressure with multi-peer
+    configurations. The dequeue is now performed with the peerlist
+    lock held for the full critical section.
+  - fix(macos): honor the -1/errno contract in the time-shim and
+    zero-initialize the timespec before calling clock_gettime_osx.
+    rist__get_system_boottime() previously returned the errno value
+    as its result instead of -1, which silently produced corrupted
+    NTP timestamps on macOS in restricted-syscall environments
+    (containers, sandboxes that block sysctl(KERN_BOOTTIME)). The
+    function now returns sysctl()'s actual return value, and
+    timestampNTP_u64() / timestampNTP_RTC_u64() defensively
+    zero-init their timespec so a clock_gettime failure can no
+    longer leak uninitialized stack into the time arithmetic and
+    falsely trip the "stream is dead" timeout.
+
+Windows / MSVC / MinGW:
+
+  - contrib/poll_win: fix the Windows poll() emulation busy-spinning
+    at 100% CPU when the watched fd set contains only sockets
+    (the common case for librist). The previous implementation fell
+    through to a 0 ms select() loop whenever no pipe/handle fds were
+    present; the timeout argument is now correctly honoured in the
+    sockets-only path.
+  - msvc: round out the contrib stdatomic shim and select native
+    C11 atomics where the toolchain supports them. Restores
+    correct atomic_uint_fast64_t behaviour on MSVC builds where
+    earlier shim coverage left some operations as plain reads /
+    writes, which (under heavy contention) could let the receiver
+    flow's last_pkt_received drift and produce false stream-dead
+    events on Windows.
+
+Tools:
+
+  - tools/rist2rist: add multi-peer bonding (multiple input or
+    output URLs on the command line), MPEG-TS Null Packet Deletion
+    (NPD), and Prometheus metrics export. rist2rist can now serve
+    as a load-balancing relay sitting close to the source of truth,
+    where small recovery buffers and large retry queues let
+    downstream receivers absorb network impairments without
+    inflating end-to-end latency.
+
+Contrib (bundled mbedtls):
+
+  - contrib/mbedtls: refresh bundled source from 2.26.0 to 2.28.10
+    (last LTS release of the 2.x series, 2025-03-24). 2.28.x is
+    strictly ABI-compatible with 2.26.x, so no librist code change
+    was required. Notable mbedtls fixes pulled in:
+      * CVE-2025-27809 (TLS server impersonation via missing
+        mbedtls_ssl_set_hostname)
+      * CVE-2025-27810 (TLS 1.2 Finished message corruption on
+        allocator/HW failure)
+      * CVE-2024-45157 (PSA HMAC_DRBG selection regression)
+      * Multi-year accumulation of fixes in AES, ECP, MPI, RSA,
+        PK, PKCS5, bignum and the new constant_time.c
+        side-channel-hardened primitives.
+    librist itself only consumes the classic mbedtls crypto API
+    (AES-CTR, CTR-DRBG, entropy, SHA-256, PBKDF2, MPI), so the
+    upgrade is a drop-in replacement for the bundled path. The
+    system-mbedtls build path (-Dbuiltin_mbedtls=false, the
+    default when a system libmbedcrypto is detected) is not
+    touched by this commit.
+  - contrib/mbedtls: widen the hardclock gate from defined(_MSC_VER)
+    to defined(_WIN32) in the bundled timing.c, so MinGW and
+    Clang-Windows builds now also pick up the
+    QueryPerformanceCounter implementation of
+    mbedtls_timing_hardclock().
+
+Contributors:
+  - Sergio Ammirata
+
+
+Changes for 0.2.13 (2026-04-18):
+--------------------------------
+
+ABI/API:
+  - ABI version 10:1:6 (soversion 4, binary-compatible with 0.2.12)
+  - API version 4.7.0 (unchanged)
+
+Build Fixes:
+
+  Platform build-fix release. No changes to the RIST protocol, public
+  API, or ABI signatures. All existing 0.2.12 installations remain
+  binary-compatible; downstream consumers do not need to recompile.
+
+  This release is only relevant if you build librist targeting one of
+  the platforms listed below. Native Linux, native macOS, FreeBSD,
+  and classic Win32 builds with MSVC are unaffected.
+
+    Windows desktop built with mingw-w64 (gcc or llvm-mingw):
+    - meson: detect clock_gettime with has_header_symbol
+      v0.2.12's probe used cc.has_function('clock_gettime'), which
+      does not resolve the static inline definition shipped by
+      mingw-w64's <pthread_time.h>. The resulting HAVE_CLOCK_GETTIME=0
+      caused contrib/time-shim.h to emit a conflicting extern
+      declaration and broke any downstream build with strict warnings
+      ("redefinition of 'clock_gettime'"). Switching to
+      cc.has_header_symbol detects the inline correctly.
+
+    Windows UWP (i686/x86_64/aarch64-w64-mingw32 UWP toolchains):
+    - Also fixed by the has_header_symbol probe above.
+    - network.c: replace GetAdaptersInfo with GetAdaptersAddresses
+      _librist_network_get_macaddr() called GetAdaptersInfo, which is
+      not part of the UWP (WINAPI_FAMILY_APP) API surface;
+      llvm-mingw's UWP iphlpapi import library does not export it,
+      so UWP consumers of librist.a failed to link with "undefined
+      symbol: _GetAdaptersInfo". Replaced with GetAdaptersAddresses,
+      supported on classic Win32 desktop and on UWP since Windows 8.
+
+    Embedded Apple SDKs (iOS, tvOS, watchOS, visionOS, all archs):
+    - tun_darwin.c: build as stubs on non-macOS Apple platforms
+      The v0.2.12 TUN support was guarded by #ifdef __APPLE__, but
+      <sys/kern_control.h> and <net/if_utun.h> only ship with the
+      macOS SDK. Every non-macOS Apple cross-build failed with
+      "fatal error: 'sys/kern_control.h' file not found", and simply
+      gating off the file produced a later link error because
+      src/rist.c and src/rist-common.c call rist_tun_read /
+      rist_tun_write unconditionally. Pull in <TargetConditionals.h>,
+      restrict the utun implementation to
+      defined(__APPLE__) && TARGET_OS_OSX, and add a second
+      #elif defined(__APPLE__) branch with stub implementations of
+      the seven public rist_tun_* entry points returning -1, matching
+      the pattern src/tun_win.c already uses on Windows. Real utun
+      support on macOS is unchanged.
+
+    macOS used as a cross-build HOST:
+    - meson: skip Homebrew prefix lookup for cross-builds
+      The Homebrew fallback that adds /opt/homebrew or /usr/local
+      include paths was running unconditionally on any Darwin host.
+      Macs cross-compiling librist for iOS, tvOS, visionOS, Android,
+      or mingw could hang or fail at configure. Gated the lookup on
+      a native macOS build. Native-macOS-for-macOS builds are
+      unaffected.
+
+Contributors:
+  - Sergio Ammirata
+
+No source-file changes outside of meson.build, src/network.c, and
+src/tun_darwin.c.
+
+
+Changes for 0.2.12 (2026-04-17):
+--------------------------------
+
+ABI/API:
+  - ABI version 10:0:6 (soversion 4, binary-compatible with 0.2.11)
+  - API version 4.7.0
+
+New Features:
+  - Cross-platform TUN support moved into the library
+    (rist_tun_open/close/read/write/set_ip/set_mtu/bring_up)
+    macOS (utun), Linux (/dev/net/tun), Windows (stub)
+  - data_fd forwarding API: rist_sender_data_fd_set,
+    rist_receiver_data_fd_set, rist_data_fd_stats_get
+    librist reads/writes directly to the fd, no application
+    code in the data path (works with sockets, FIFOs, TUN fds)
+  - New risttunnel tool: point-to-point IP tunnel over RIST
+  - YAML config file support for ristsender/ristreceiver with native parser
+  - Receiver session timeout API and --session-timeout CLI option
+  - Peer statistics in receiver output
+  - Multicast interface (miface) in sender peer statistics JSON
+  - avg_buffer_time field exposed in receiver_flow stats struct
+  - New udp2udp tool for UDP relay
+  - Profile selection (--profile) in rist2rist
+  - Sender input queue statistics
+  - MPEG-TS null packet suppression byte tracking
+  - Differentiated bitrate tracking and sender stats API
+
+Bug Fixes:
+  - Fix sender queue full detection: replace wrap-unsafe index
+    arithmetic (which silently misfired on ring-buffer wraparound)
+    with a size-vs-max comparison. Prevents in-flight retransmit
+    buffers from being silently overwritten under sustained load.
+  - Fix OOB main-profile data delivery: rist_send_seq_rtcp no
+    longer strips the first 4 bytes of zero-header OOB packets,
+    and rist_oob_dequeue now iterates child peers when the OOB
+    buffer references a listener peer (matching main-channel
+    behaviour instead of failing silently).
+  - Fix receiver crash on configurable RTT multiplier path
+  - Fix bogus lost-packet counters
+  - Fix premature stream stop on ECHO timeout for single-path (closes #196)
+  - Fix multi-sender queue issues (static buffer_size moved to context)
+  - Thread-safe FIFO access in rist_receiver_data_read2
+  - Fix memory leaks (authentication failures, sender queue)
+  - Fix OpenMetrics response: add missing trailing EOF line
+  - Fix rist_client_flow_quality metric unit
+  - Fix OpenMetrics Content-Type header for Prometheus compatibility
+  - Fix RTT min/max invalid values
+  - Fix const correctness in URL parameter parsing
+  - Fix signed/unsigned comparison statements
+  - Fix missing strings.h include in yamlparse.c
+  - Fix clock used when processing RR with lsr older than last SR
+  - Fix -Wmisleading-indentation warning in receiver FIFO overflow path
+  - Fix tools build on macOS/Windows/FreeBSD: include endian-shim.h
+    for be16toh in ristsender.c and ristreceiver.c
+  - Fix tools build: always compile tunnel_interface/tun_mode into
+    rist_tools_config_object (consumers reference them unconditionally)
+  - Fix missing_counter bookkeeping: track queue length instead of
+    NACK-sent count. Previously the counter stayed at 0 on paths that
+    never emit NACKs (e.g. simple-profile multicast), causing the
+    missing_queue JSON stat to under-report and the congestion guard in
+    receiver_mark_missing to never trip.
+  - Fix build-only-platform-matching TUN source file; previously the
+    non-matching src/tun_*.c were compiled into an empty translation
+    unit and tripped -Werror=pedantic on Ubuntu/MinGW.
+  - Fix risttunnel build on MinGW: include <windows.h> for Sleep().
+
+Improvements:
+  - Refactored sender queue management for better memory efficiency
+  - Improved UDP send reliability with EAGAIN retry
+  - Improved cname buffer safety
+  - Refactored flow timeout semantics
+
+Build System:
+  - TUN support is now always compiled; removed the use_tun meson option
+  - CI: drop -Duse_tun=true flag from ubuntu build job
+  - Fix false positive mbedtls detection in meson build
+  - Use MbedTLS cmake config module
+  - Check brew exists before calling (macOS)
+  - Fix compiler warnings in aes.h (Steve Lhomme)
+
+Acknowledgements:
+  - Dave Evans for RR clock fix
+  - Steve Lhomme for aes.h warning fixes
+  - Laur for the receiver FIFO misleading-indentation report
+
+
+Changes for 0.2.11 (2024-11-15):
+--------------------------------
+
+New Features:
+  - Ephemeral listening ports support (add/remove ports after initialization)
+  - New function rist_sender_npd_get for null packet deletion status
+  - New function rist_peer_get_cname to extract peer's private cname
+  - Enhanced CI test application with packet integrity checks
+
+Bug Fixes:
+  - Fixed potential socket deadlock condition under MS Windows
+  - Fixed ristsender confusion with multicast addresses sharing destination port
+  - Fixed compile warnings under different C++ versions
+  - Fixed theoretical IP checksum calculation issue
+  - Fixed ristreceiver closing when tun://@ used in output URL
+  - Fixed deadlock condition on FIFO overflow
+  - Fixed invalid verbose-level parameter handling
+  - Fixed binding to raw UDP socket
+  - Fixed memory allocation order in stats structures
+  - Fixed Mac homebrew arm64 build
+  - Fixed null packet deletion
+  - Fixed units on sender Prometheus stats
+  - Fixed keepalive packet data corruption bug
+  - Fixed improper RTP/RTCP classification (affected ST2110)
+  - Fixed flow timeout to follow session timeout
+  - Updated peer config timing_mode field handling
+
+Build:
+  - Updated meson version to avoid deprecated items
+
+Acknowledgements:
+  - Special thanks to Thierry Lelegard for null packet deletion bug fix
+
+
+Changes for 0.2.10 (2023-10-30):
+--------------------------------
+
+  - Development branch merge with accumulated fixes and improvements
+
+
+Changes for 0.2.9 (2023-10-11):
+-------------------------------
+
+Bug Fixes:
+  - Fix compilation on 32-bit systems
+  - Fix regression in stats obj RTT value
+  - Remove unneeded locking in buffer scaling
+  - Fix "too old packages" error due to buffer scaling
+  - Fix empty buffer time check
+  - Disable buffer negotiation when sender max buffer < receiver buffer
+  - Fix deadlock caused by wrong lock order when removing peers
+  - Fix building Prometheus code against older libmicrohttpd
+  - Fix compilation on Hurd
+
+
+Changes for 0.2.8 (2023-08-22):
+-------------------------------
+
+New Features:
+  - SRP (Secure Remote Password) passphrase exchange
+  - Passphrase changing support via U1 bit on M1/M2 packets
+  - Fully implemented passphrase changing on multicast
+
+Bug Fixes:
+  - Add GRE check for bit 1 and GRE Ver set to 0
+  - Fix SIGSEGV when peer_rtcp pointer is null
+
+Improvements:
+  - Refactored peer matching
+  - Refactored cryptographic randomness from SRP
+  - Added peer lock for thread safety
+  - Default PSK keysize to 256 if not set
+
+
+Changes for 0.2.7 (2022-04-07):
+-------------------------------
+
+New Features:
+  - Multiplexing support
+  - TUN (tunnel) interface support
+
+
+Changes for 0.2.6 (2021-07-22):
+-------------------------------
+
+Improvements:
+  - Move per-packet messages to debug level to prevent log flooding
+  - Release data earlier when real-time in buffer exceeds 1.1x buffer duration
+  - Drop stale packets older than 2x buffer duration
+
+
+Changes for 0.2.5 (2021-07-20):
+-------------------------------
+
+  - Maintenance release with minor fixes
+
+
+Changes for 0.2.4 (2021-06-25):
+-------------------------------
+
+  - Maintenance release with stability improvements
+
+
+Changes for 0.2.3 (2021-06-22):
+-------------------------------
+
+  - Maintenance release with bug fixes
+
+
+Changes for 0.2.2 (2021-06-16):
+-------------------------------
+
+  - Maintenance release
+
+
+Changes for 0.2.1 (2021-06-10):
+-------------------------------
+
+  - Stability fixes for initial public release
+
+
+Changes for 0.2.0 (2021-05-12):
+-------------------------------
+
+Initial official public release of librist.
+
+Core Features:
+  - Full support for VSF TR-06-1 (Simple Profile)
+  - Partial support for VSF TR-06-2 (Main/Advanced Profile):
+    * PSK Encryption (AES 128 and 256)
+    * Bidirectional connection initiation
+    * Multipath support (load balanced or redundant link bonding)
+    * One-to-many distribution (media server mode)
+    * Tested packet recovery up to 50% continuous loss
+    * Jitter-tolerant output timing
+
+Tools:
+  - ristsender - RIST sender application
+  - ristreceiver - RIST receiver application
+  - rist2rist - RIST relay/proxy application
+
+Platform Support:
+  - Linux, macOS, Windows, FreeBSD
+  - Cross-compilation support via meson
+
+
+Project Information:
+--------------------
+
+Website: https://code.videolan.org/rist/librist
+License: BSD 2-Clause "Simplified" License

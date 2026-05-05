@@ -1,0 +1,17 @@
+COMPILE_OPTS =         $(INCLUDES) -I/usr/local/include -I. -O -DSOCKLEN_T=int -DLOCALE_NOT_USED -I/home/shash29/vlc/contrib/x86_64-w64-mingw32/include -fexceptions -DNO_OPENSSL=1  -I/home/shash29/vlc/contrib/x86_64-w64-mingw32/include -g -O2 -DNO_GETIFADDRS=1
+C =                    c
+C_COMPILER =           $(CC)
+C_FLAGS =              $(COMPILE_OPTS) -DUSE_OUR_BZERO=1 -D__MINGW32__
+CPP =                  cpp
+CPLUSPLUS_COMPILER =   $(CXX)
+CPLUSPLUS_FLAGS =      $(COMPILE_OPTS) -D__MINGW32__ -Wall -Wno-deprecated
+OBJ =                  o
+LINK =                 $(CXX) -o 
+LINK_OPTS =            -L.
+CONSOLE_LINK_OPTS =    $(LINK_OPTS)
+LIBRARY_LINK =         $(AR) cr 
+LIBRARY_LINK_OPTS =
+LIB_SUFFIX =                   a
+LIBS_FOR_CONSOLE_APPLICATION = -lws2_32 -lssl -lcrypto
+LIBS_FOR_GUI_APPLICATION = -lws2_32
+EXE = .exe

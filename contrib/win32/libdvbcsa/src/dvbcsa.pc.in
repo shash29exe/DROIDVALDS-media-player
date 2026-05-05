@@ -1,0 +1,17 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+datarootdir=@datarootdir@
+libdir=@libdir@
+datadir=@datadir@
+pkgincludedir=@includedir@/@PACKAGE@
+pkgdatadir=${datadir}/@PACKAGE@
+pkglibdir=${libdir}/@PACKAGE@
+pluginsdir=${pkglibdir}/plugins
+
+Name: DVB CSA Library
+Description: implementation of the DVB Common Scrambling Algorithm
+Version: @VERSION@
+Cflags: -I${includedir}
+Requires.private:
+Libs: -L${libdir} -ldvbcsa

@@ -29,6 +29,9 @@
 
 #include "qt.hpp"
 
+#include <QtMultimedia/QMediaPlayer>
+#include <QCloseEvent>
+
 #include "widgets/native/qvlcframe.hpp"
 #include "util/singleton.hpp"
 
@@ -54,13 +57,16 @@ class AboutDialog : public QVLCDialog
     Q_OBJECT
 public:
     AboutDialog( qt_intf_t * );
+    ~AboutDialog();
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
     void showEvent ( QShowEvent * ) override;
+    void closeEvent( QCloseEvent *event ) override;
 
 private:
     bool b_advanced;
+    QMediaPlayer *player;
     Ui::aboutWidget ui;
 
 private slots:

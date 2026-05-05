@@ -1,0 +1,8 @@
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/openjpeg-2.5/opj_config.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/libopenjp2.a
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/include/openjpeg-2.5/openjpeg.h
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/openjpeg-2.5/OpenJPEGTargets.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/openjpeg-2.5/OpenJPEGTargets-relwithdebinfo.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/openjpeg-2.5/OpenJPEGConfig.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/cmake/openjpeg-2.5/OpenJPEGConfigVersion.cmake
+/home/shash29/vlc/contrib/x86_64-w64-mingw32/lib/pkgconfig/libopenjp2.pc

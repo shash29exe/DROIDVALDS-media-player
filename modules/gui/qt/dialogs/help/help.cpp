@@ -2,23 +2,6 @@
  * help.cpp : Help and About dialogs
  ****************************************************************************
  * Copyright (C) 2007 the VideoLAN team
- *
- * Authors: Jean-Baptiste Kempf <jb (at) videolan.org>
- *          Rémi Duraffort <ivoire (at) via.ecp.fr>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
  *****************************************************************************/
 
 #ifdef HAVE_CONFIG_H
@@ -43,11 +26,18 @@
 #include <QEvent>
 #include <QDate>
 #include <QPushButton>
+#include <QVBoxLayout>
+#include <QCloseEvent>
+
+/* Добавленные модули для видео */
+#include <QtMultimedia/QMediaPlayer>
+#include <QtMultimediaWidgets/QVideoWidget>
+#include <QtMultimedia/QAudioOutput>
+#include <QUrl>
 
 #include <cassert>
 
 HelpDialog::HelpDialog( qt_intf_t *_p_intf ) : QVLCFrame( _p_intf )
-
 {
     setWindowTitle( qtr( "Help" ) );
     setWindowRole( "vlc-help" );
@@ -86,22 +76,38 @@ AboutDialog::AboutDialog( qt_intf_t *_p_intf)
     setWindowModality( Qt::WindowModal );
 
     ui.version->setText(qfu( " " VERSION_MESSAGE ) );
-    ui.title->setText("<html><head/><body><p><span style=\" font-size:26pt; color:#353535;\"> " + qtr( "VLC media player" ) + " </span></p></body></html>");
+    ui.title->setText("<html><head/><body><p><span style=\" font-size:26pt; color:#ff0000;\"> " + qtr( "DROIDVALDS media player" ) + " </span></p></body></html>");
 
-    ui.MainBlabla->setText("<html><head/><body>" +
-    qtr( "<p>VLC media player is a free and open source media player, encoder, and streamer made by the volunteers of the <a href=\"https://www.videolan.org/\"><span style=\" text-decoration: underline; color:#0057ae;\">VideoLAN</span></a> community.</p><p>VLC uses its internal codecs, works on essentially every popular platform, and can read almost all files, CDs, DVDs, network streams, capture cards and other media formats!</p><p><a href=\"https://www.videolan.org/contribute/\"><span style=\" text-decoration: underline; color:#0057ae;\">Help and join us!</span></a>" ) +
-    "</p></body> </html>");
+    ui.MainBlabla->setText("<html><head/><body>" 
+    "новый проект Redhat Systemd Вирус Эксплоит GCC кибероружие Redhat угроза Новый Проект Редхат Systemd наноробот встроенный в GCC модуль для Редхат Линукс Эксплоит GCC от Редхат на квантово-физико-математическом уровне Systemd СССР Неопознанный Летающий объект Редхат Майрософт Инопланетяне Зона 51 GCC бендер в линукс Антиматерия ЦРУ Спецслужбы Редхат Линукс GCC Слежка за людьми И Open-Source бендер инопланетарных масштабов США разведка Systemd и новый проект Редхат по захвату земли Systemd GCC суперсекретная разработка Редхат Systemd цивилизация Commodore 64"
+    "<br><br>"
+    "vlc did not install correctly"
+    "</body> </html>");
 
-#if 0
-    if( QDate::currentDate().dayOfYear() >= QT_XMAS_JOKE_DAY && var_InheritBool( p_intf, "qt-icon-change" ) )
-        ui.iconVLC->setPixmap( QPixmap( ":/logo/vlc128-xmas.png" ) );
-    else
-        ui.iconVLC->setPixmap( QPixmap( ":/logo/vlc128.png" ) );
-#endif
+    QVideoWidget *videoWidget = new QVideoWidget( this );
+    videoWidget->setAspectRatioMode( Qt::IgnoreAspectRatio );
+    videoWidget->setMinimumSize( 300, 200 );
 
-#if 0
-    ifdef UPDATE_CHECK
-#else
+    player = new QMediaPlayer( this );
+    player->setVideoOutput( videoWidget );
+    
+    QAudioOutput *audioOutput = new QAudioOutput( this );
+    player->setAudioOutput( audioOutput );
+    audioOutput->setVolume( 0.7 ); // Громкость 70%
+
+    player->setSource( QUrl("qrc:/video/torvalds.mp4") );
+
+    if( this->layout() )
+        this->layout()->addWidget( videoWidget );
+
+    connect( player, &QMediaPlayer::mediaStatusChanged, [this]( QMediaPlayer::MediaStatus status ) {
+        if( status == QMediaPlayer::EndOfMedia )
+            this->player->play();
+    });
+
+    player->play();
+
+#ifndef UPDATE_CHECK
     ui.update->hide();
 #endif
 
@@ -124,6 +130,19 @@ AboutDialog::AboutDialog( qt_intf_t *_p_intf)
     ui.creditsButton->installEventFilter( this );
 
     ui.version->installEventFilter( this );
+}
+
+AboutDialog::~AboutDialog()
+{
+    if ( player )
+        player->stop();
+}
+
+void AboutDialog::closeEvent( QCloseEvent *event )
+{
+    if ( player )
+        player->stop();
+    QVLCDialog::closeEvent( event );
 }
 
 void AboutDialog::showLicense()
@@ -176,6 +195,8 @@ bool AboutDialog::eventFilter(QObject *obj, QEvent *event)
 void AboutDialog::showEvent( QShowEvent *event )
 {
     ui.stackedWidget->setCurrentWidget( ui.blablaPage );
+    if ( player )
+        player->play();
     QVLCDialog::showEvent( event );
 }
 

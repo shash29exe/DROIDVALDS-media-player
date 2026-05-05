@@ -1,0 +1,17 @@
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/zlibstatic.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/package.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/package_source.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/edit_cache.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/rebuild_cache.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/list_install_components.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/install.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/install/local.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/CMakeFiles/install/strip.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/package.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/package_source.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/edit_cache.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/rebuild_cache.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/list_install_components.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/install.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/install/local.dir
+/home/shash29/vlc/contrib/win32/zlib/vlc_build/contrib/CMakeFiles/install/strip.dir

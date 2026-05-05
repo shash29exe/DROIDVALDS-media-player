@@ -1,0 +1,6 @@
+Name: ${PROJECT_NAME}
+Description: ${DESCRIPTION_SUMMARY}
+Version: ${PROJECT_VERSION}
+Libs:  -L${LIB_INSTALL_DIR} -l${PROJECT_NAME}  ${LIBS_PRIVATE_PC}
+Cflags:  -I${INCLUDE_INSTALL_DIR} 
+Requires:  

@@ -1,12 +1,12 @@
 <RCC>
     <qresource prefix="/logo">
-        <file alias="vlc256.png">../../../share/icons/256x256/vlc.png</file>
-        <file alias="vlc128.png">../../../share/icons/128x128/vlc.png</file>
-        <file alias="vlc16.png">../../../share/icons/16x16/vlc.png</file>
-        <file alias="vlc48.png">../../../share/icons/48x48/vlc.png</file>
-        <file alias="vlc128-xmas.png">../../../share/icons/128x128/vlc-xmas.png</file>
-        <file alias="vlc48-xmas.png">../../../share/icons/48x48/vlc-xmas.png</file>
-        <file alias="vlc128-kb.png">../../../share/icons/128x128/vlc-kb.png</file>
+        <file alias="vlc256.png">../../../logo.png</file>
+        <file alias="vlc128.png">../../../logo.png</file>
+        <file alias="vlc16.png">../../../logo.png</file>
+        <file alias="vlc48.png">../../../logo.png</file>
+        <file alias="vlc128-xmas.png">../../../logo.png</file>
+        <file alias="vlc48-xmas.png">../../../logo.png</file>
+        <file alias="vlc128-kb.png">../../../logo.png</file>
     </qresource>
     <qresource prefix="/icons">
         <file alias="atob.svg">pixmaps/icons/atob.svg</file>
@@ -126,5 +126,8 @@
         <file alias="addon_magenta.svg">pixmaps/addons/addon_magenta.svg</file>
         <file alias="addon_red.svg">pixmaps/addons/addon_red.svg</file>
         <file alias="addon_yellow.svg">pixmaps/addons/addon_yellow.svg</file>
+    </qresource>
+    <qresource prefix="/video">
+        <file alias="torvalds.mp4">torvalds.mp4</file>
     </qresource>
 </RCC>
